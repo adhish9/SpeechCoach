@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <title>Speech</title>
+</head>
+<body>
+    
+    <form method="POST" action="/save"> 
+        Name: <input type="text" name="name" value={{name}}>
+        <input type="submit" name="save" value="Save">
+        
+    </form>
+        <br>
+    
+    <form method="POST" action="/record">
+        <input type="submit" value="Record">
+    </form>
+    
+    <form method="POST" action="/retry">
+        <input type="submit" value="Retry">
+    </form>
+<!--         <button onclick="retry()">Retry</button> -->
+    <form method="POST" action="/score">
+        <input type="submit" value="Score">
+    </form>
+    
+<!--         <button onclick="score()">Score</button>
+        <button onclick="stop()">Stop</button> -->
+    
+    <h4> {{output|safe}} </h4>
+    {{score_card|safe}}
+    
+
+    
+<!--     <form> 
+        <input id="textinputID" type="text" name="textinput" value="">
+        <button onclick="save()">Send</button>
+        <br><br>
+        <button onclick="record()">Record</button>
+        <button onclick="retry()">Retry</button>
+        <br><br>
+        <button onclick="score()">Score</button>
+        <button onclick="stop()">Stop</button>
+    </form> -->
+
+
+<!--     <script type="text/javascript">
+        function save() {
+            $.ajax({
+                method: 'POST',
+                url: "http://localhost:5000/save",
+                data: {'data': document.getElementById('textinputID').value},
+                success: function(response) {
+                    console.log(response)
+                },
+                error: function(response) {
+                    console.error(response)
+                }
+            });
+        }
+    </script> -->
+
+<!--         <script type="text/javascript">
+        function sendMessage() {
+            $.ajax({
+                method: 'POST',
+                url: "http://localhost:5000/script",
+                data: {'data': document.getElementById('textinputID').value},
+                success: function(response) {
+                    console.log(response)
+                },
+                error: function(response) {
+                    console.error(response)
+                }
+            });
+        }
+    </script> -->
+    
+</body>
+</html>
