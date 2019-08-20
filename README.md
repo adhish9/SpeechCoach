@@ -1,5 +1,5 @@
 # SpeechCoach
-Speech coach using ML/AI tailored for the Indian accent
+Speech coach using ML/AI for the Indian accent
 
 ---Ubuntu 16.04 LTS
 
