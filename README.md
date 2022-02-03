@@ -7,7 +7,7 @@ Speech coach using ML/AI for the Indian accent
 
 ---Get ffmpeg "sudo apt-get install ffmpeg"
 
----??? Might need to install soX separately "sudo apt-get install sox"
+---Might need to install soX separately "sudo apt-get install sox"
 
 ---Run GetAudio 
 
